@@ -1,0 +1,15 @@
+current directory: /Users/risacan/projects/kunitachikids.com/vendor/bundle/ruby/2.3.0/gems/fast_blank-1.0.0/ext/fast_blank
+/Users/risacan/.anyenv/envs/rbenv/versions/2.3.2/bin/ruby -r ./siteconf20170118-46069-el44d0.rb extconf.rb
+creating Makefile
+
+current directory: /Users/risacan/projects/kunitachikids.com/vendor/bundle/ruby/2.3.0/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR=" clean
+
+current directory: /Users/risacan/projects/kunitachikids.com/vendor/bundle/ruby/2.3.0/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR="
+compiling fast_blank.c
+linking shared-object fast_blank.bundle
+
+current directory: /Users/risacan/projects/kunitachikids.com/vendor/bundle/ruby/2.3.0/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 fast_blank.bundle ./.gem.20170118-46069-1rantps
