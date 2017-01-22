@@ -1,0 +1,25 @@
+---
+title: Teachers
+teachers:
+  - shea:
+    name: Shea
+    image: images/teachers/shea.jpg
+  - maddy:
+    name: Maddy
+    image: images/teachers/maddy.jpg
+  - josh:
+    name: Josh
+    image: images/teachers/josh.jpg
+  - alice:
+    name: Alice
+    image: images/teachers/alice.jpg
+---
+<h1 class="title"><%= current_page.data.title %></h1>
+<% current_page.data.teachers.each do |teacher| %>
+  <div>
+    <h2><%= teacher.name %></h2>
+    <figure class="image is-128x128" %>
+      <%= image_tag teacher.image%>
+    </figure>
+  </div>
+<% end %>
