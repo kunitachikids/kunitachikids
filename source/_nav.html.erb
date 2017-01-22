@@ -1,7 +1,11 @@
-<nav>
-  <ul>
-    <% data.nav.pages.each do |page| %>
-      <li><%= link_to page, "\/#{page.tr_s(" ", "_")}.html" %></li>
-    <% end %>
-  </ul>
+<nav class="nav">
+  <div class="container">
+    <div class="nav-left nav-menu">
+      <% data.nav.pages.each do |page| %>
+        <%= link_to page, "\/#{page.tr_s(" ", "_")}.html",
+          class: "nav-item is-tab is-hidden-mobile" %>
+      <% end %>
+    </div>
+  </div>
 </nav>
+

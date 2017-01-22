@@ -9,6 +9,7 @@
     <title><%= current_page.data.title + " - Kunitachi Kids" %></title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
@@ -18,7 +19,9 @@
     <%= partial "header" %>
     <%= partial "nav" %>
     <main>
-      <%= yield %>
+      <div class="container">
+        <%= yield %>
+      </div>
     </main>
     <%= partial "footer" %>
   </body>

@@ -1,4 +1,22 @@
 ---
 title: Educational Policies
+description: Our vision
+policies:
+  - Cultivate self-motivated and self-disciplined students by praising them for their efforts in every day life and study.
+  - Foster students' passion and interest toward academic study and other hobbies through an academic atmosphere that creates true joy and desire for learning without forcing or pressuring students to study.
+  - Cultivate students' spirit of risk-taking through encouraging them not to be afraid of failures. Failure is the mother of success, so we desire to help students develop resilience through perseverance.
+  - Cultivate students' respect towards their parents, teachers, classmates and others.
+  - Cultivate the values of sharing, caring, loving and helping each other.
+  - Cultivate globally minded students who collaborate and compete with others respectfully. Educate students about their own culture, while developing curiosity and respect for other cultures.
+  - Foster students' responsibility toward their behavior through encouraging them to apologize when they make mistakes, as well as learning a lesson from their misbehavior to improve in the future.
 ---
-<h1><%= current_page.data.title %></h1>
+<div class="content">
+  <h1 class="title"><%= current_page.data.title %></h1>
+  <h2 class="subtitle is-6"><%= current_page.data.description %></h2>
+  <ol>
+    <% current_page.data.policies.each do |policy| %>
+      <li><p><%= policy %></li>
+    <% end %>
+  </ol>
+</div>
+
