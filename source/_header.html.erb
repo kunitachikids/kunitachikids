@@ -2,15 +2,18 @@
   <section class="hero is-primary">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">
-          <%= link_to "<h1>Kunitachi Kids International School</h1>", "/index.html" %>
-        </h1>
-        <h2 class="subtitle">
-        english school!
-        </h2>
-        <span>Tel: <%= data.nav.contacts.tel %></span>
-        <span>Email <%= data.nav.contacts.email %></span>
-        <span>Address <%= data.nav.contacts.address %></span>
+        <div class="level">
+          <h1 class="title">
+            <%= link_to "Kunitachi Kids<br>International School", "/index.html" %>
+          </h1>
+          <div class="level-right">
+            <div>
+              <p>Tel: <%= data.nav.contacts.tel %></p>
+              <p>Email: <%= data.nav.contacts.email %></p>
+              <p>Address: <%= data.nav.contacts.address %></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

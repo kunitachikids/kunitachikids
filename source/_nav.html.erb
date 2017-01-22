@@ -3,7 +3,7 @@
     <% data.nav.pages.each do |page| %>
       <li>
         <%= link_to page, "\/#{page.tr_s(" ", "_")}.html",
-          class: "nav-item is-tab is-hidden-mobile" %>
+          class: "nav-item is-tab" %>
       </li>
     <% end %>
   </ul>
