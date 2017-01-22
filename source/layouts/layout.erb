@@ -17,10 +17,16 @@
 
   <body class="<%= page_classes %>">
     <%= partial "header" %>
-    <%= partial "nav" %>
     <main>
       <div class="container">
-        <%= yield %>
+        <div class="columns">
+          <div class="column is-3">
+            <%= partial "nav" %>
+          </div>
+          <div class="column">
+            <%= yield %>
+          </div>
+        </div>
       </div>
     </main>
     <%= partial "footer" %>
