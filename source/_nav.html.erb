@@ -1,8 +1,12 @@
 <aside class="menu">
   <ul class="menu-list">
+    <li>
+      <%= link_to "Home", "/index.html",
+        class: "nav-item is-tab" %>
+    </li>
     <% data.nav.pages.each do |page| %>
       <li>
-        <%= link_to page, "\/#{page.tr_s(" ", "_")}.html",
+        <%= link_to page, "\/#{page.downcase.tr_s(" ", "_")}.html",
           class: "nav-item is-tab" %>
       </li>
     <% end %>
