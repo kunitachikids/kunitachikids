@@ -17,7 +17,9 @@
   <body class="<%= page_classes %>">
     <%= partial "header" %>
     <%= partial "nav" %>
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
     <%= partial "footer" %>
   </body>
 </html>

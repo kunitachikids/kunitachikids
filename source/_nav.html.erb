@@ -1,5 +1,7 @@
 <nav>
-<%= link_to "Educational Policies", "/educational_policies.html" %>
-<%= link_to "Courses and Schedule", "/courses_and_schedule.html" %>
-<%= link_to "Location", "/location.html" %>
+  <ul>
+    <% data.nav.pages.each do |page| %>
+      <li><%= link_to page, "\/#{page.tr_s(" ", "_")}.html" %></li>
+    <% end %>
+  </ul>
 </nav>
