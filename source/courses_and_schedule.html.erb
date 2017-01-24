@@ -1,7 +1,64 @@
 ---
 title: "Courses and Schedule"
-description: Monday to Saturday, for kids and for adults
+description: The description of courses
+courses:
+  - baby_class:
+    title: Baby Class
+    conditions: Age 1.5years to 2years
+    day_and_time: Mon-Fri (10am to 12pm)
+    notes: We offer 2 days lessons up to 5days lessons
+    capacity: 5 children
+    entry_timing: Anytime
+  - preschool_class:
+    title: Pre-school
+    conditions: Age 2years to3years
+    day_and_time: Mon-Fri (10am to 12pm)
+    notes: We offer 3 days lessons up to 5 days lessons
+    capacity: 15 children
+    entry_timing: Anytime
+  - kinder_class:
+    title: Kinder
+    conditions: Age 3 years to 6years
+    day_and_time: Mon-Fri (10am to 12pm)  5 days lessons
+    notes:
+    capacity: 20 children
+    entry_timing: Jan, April, and September
+  - baby_and_me_class:
+    title: Baby and Me
+    conditions: Age 6months babies above and their mom or dad
+    day_and_time: Monday, Wednesday and Saturday.
+    notes:
+    capacity: 10 babies and moms
+    entry_timing: Anytime
+    descriptions: Sing English songs / Read books / Ask mom to discuss their parenting problems with kids in English / Teach Mom how to read books to their baby
+  - adult_class:
+    title:
+    conditions:
+    day_and_time:
+    notes:
+    capacity:
+    entry_timing:
 ---
 <h1 class="title"><%= current_page.data.title %></h1>
-<h2 class="subtitle is-6"><%= current_page.data.description %></h2>
-
+<h2 class="subtitle is-4"><%= current_page.data.description %></h2>
+<% current_page.data.courses.each do |course| %>
+<article class="message is-warning">
+  <div class="message-header">
+    <p><%= course.title %></p>
+  </div>
+  <div class="message-body">
+  <div>
+    <h3>Conditions</h3>
+    <p><%= course.conditions %></p>
+    <h3>Day and Time</h3>
+    <p><%= course.day_and_time %><%= course.notes ? " / #{course.notes}" : "" %></p>
+    <h3>Capacity</h3>
+    <p><%= course.capacity %></p>
+    <h3>Entry Timing</h3>
+    <p><%= course.entry_timing %></p>
+    <h3>Details</h3>
+    <p><%= course.descriptions %></p>
+  </div>
+   </div>
+  </article>
+<% end %>
