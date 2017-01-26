@@ -1,0 +1,47 @@
+courses:
+  - baby_class:
+      prerequisite_conditions:
+      - Age 1.5years to 2years
+      day_and_time:
+      - Mon-Fri (10am to 12pm)
+      - We offer 2 days lessons up to 5days lessons
+      capacity:
+      - 5 children
+      entry_timing:
+      - Anytime
+  - pre_school:
+      prerequisite_conditions:
+      - Age 2 years to 3 years
+      day_and_time:
+      - Mon-Fri (10am to 12pm)
+      - We offer 3 days lessons up to 5 days lessons
+      capacity:
+      - 15 children
+      entry_timing:
+      - Anytime
+  - kinder_class:
+      prerequisite_conditions:
+      - Age 3 years to 6 years
+      day_and_time:
+      - Mon-Fri (10am to 12pm) 5 days lessons
+      capacity:
+      - 20 children
+      entry_timing:
+      - Jan, April, and September
+  - baby_and_me:
+      prerequisite_conditions:
+      - Age 6months babies above and their mom or dad
+      day_and_time:
+      - Monday, Wednesday and Saturday.
+      capacity:
+      - 10 babies and moms
+      entry_timing:
+      - Anytime
+      details:
+      - Sing English songs
+      - Read books
+      - Ask mom to discuss their parenting problems with kids in English
+      - Teach Mom how to read books to their baby
+  - adult_class:
+      details:
+      - Each month we will decide the themes related to daily life activities, parenting,Discipline, and discussion about some recent news.
