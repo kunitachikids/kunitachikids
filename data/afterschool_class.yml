@@ -1,0 +1,35 @@
+courses:
+  - afterschool_english_circle_academy:
+      prerequisite_conditions:
+      - Age 3years to Senior High school students
+      day_and_time:
+      - Mon-Fri (3pm to 7pm)
+      capacity:
+      - 50 children
+      entry_timing:
+      - Anytime
+  - course_1:
+      details:
+      - Conversation and reading class
+      - Using flash cards and games to improve English speaking
+      - Each month we will decide different themes
+      - Study social science. One theme each month
+      - Reading book Every week, the students need to memorize one book.
+      - Writing all the words from reading book.
+  - course_2:
+      details:
+      - Conversation and Eiken or TOEIC or TOEFL
+      - Every month the students need to memorize 10 to 15 answers to the related themes
+      - And social science themes.
+      - To help them improve speaking ability
+      - Eiken course
+      - All the students need to remember all the words for their level and do a lot of reading
+      - And remember the related words
+      - TOEIC course
+      - TOEFL course
+  - Course 3:
+      details:
+      - The class for applying for American School in Japan
+  - Course 4:
+      details:
+      - Chinese class
