@@ -1,0 +1,29 @@
+courses:
+  - morning_class_for_kids:
+      day_and_time:
+      - Saturday from 10am to 12 pm
+      details:
+      - Conversation and reading class
+      - Using flash cards and games to improve English speaking
+      - Each month we will decide different themes
+      - Study social science. One theme each month
+      - Reading book. Every week, the students need to memorize one book.
+      - Writing all the words from reading book.
+  - baby_and_me_class:
+      day_and_time:
+      - Saturday from 10am to 12pm
+  - afternoon_class_for_kids:
+      day_and_time:
+      - Saturday from 1pm to 5pm
+  - afternoon_class_for_advanced_kids:
+      details:
+      - EIKEN, TOEIC and TOEFL
+      Conversation_and_Eiken_or_TOEIC_or_TOEFL:
+      - Every month the students need to memorize 10 to 15 answers to the related themes And social science themes to help them improve speaking ability.
+  - Eiken,TOEIC,TOEFL_course:
+      details:
+      - All the students need to remember all the words for their level and do a lot of reading and remember the related words
+  - saturday_whole_day_English_class:
+      details:
+      - Morning Conversation and reading class
+      - Afternoon Eiken, TOEIC and TOEFL

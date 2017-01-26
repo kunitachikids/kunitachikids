@@ -36,3 +36,20 @@ title: "Courses and Schedule"
     </section>
   <% end %>
 <% end %>
+<% data.saturday_class.courses.each do |course| %>
+  <% course.each do |title, info| %>
+    <section class="section">
+      <h3 class="title" id="coursename"><%= title.tr_s("_", " ").capitalize %></h3>
+        <% info.each do |key, value| %>
+          <div class="content">
+            <span class="tag is-success is-medium"><%= key.tr_s("_", " ").capitalize %></span>
+            <ul>
+              <% value.each do |line| %>
+                <li><%= line %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+    </section>
+  <% end %>
+<% end %>
