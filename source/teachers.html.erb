@@ -3,23 +3,23 @@ title: Teachers
 teachers:
   - shea:
     name: Shea
-    image: images/teachers/shea.jpg
+    image: images/teachers/shea.png
   - maddy:
     name: Maddy
-    image: images/teachers/maddy.jpg
+    image: images/teachers/maddy.png
   - josh:
     name: Josh
-    image: images/teachers/josh.jpg
+    image: images/teachers/josh.png
   - alice:
     name: Alice
-    image: images/teachers/alice.jpg
+    image: images/teachers/alice.png
 ---
 <h1 class="title"><%= current_page.data.title %></h1>
 <% current_page.data.teachers.each do |teacher| %>
-  <div>
-    <h2><%= teacher.name %></h2>
-    <figure class="image is-128x128" %>
+  <section class="section">
+    <h2 class="title is-4"><%= teacher.name %></h2>
+    <figure class="image is-256x256" %>
       <%= image_tag teacher.image%>
     </figure>
-  </div>
+  </section>
 <% end %>
