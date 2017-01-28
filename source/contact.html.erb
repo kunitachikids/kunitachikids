@@ -3,8 +3,8 @@ title: Contact
 description: ☎️, ✉️
 ---
 <h1 class="title"><%= current_page.data.title %></h1>
-<div>
+<section class="section is-paddingless">
   <p>Tel: <%= link_to data.nav.contacts.tel,  "tel:" + data.nav.contacts.tel %></p>
   <p>Email: <%= data.nav.contacts.email %></p>
   <p>Address: <%= data.nav.contacts.address %></p>
-</div>
+</section>

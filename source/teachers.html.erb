@@ -16,7 +16,7 @@ teachers:
 ---
 <h1 class="title"><%= current_page.data.title %></h1>
 <% current_page.data.teachers.each do |teacher| %>
-  <section class="section">
+  <section class="section is-paddingless">
     <h2 class="title is-4"><%= teacher.name %></h2>
     <figure class="image is-256x256" %>
       <%= image_tag teacher.image %>
