@@ -5,7 +5,7 @@ title: "Courses and Schedule"
 <% data.weekday_class.courses.each do |course| %>
   <% course.each do |title, info| %>
     <section class="section">
-      <h3 class="title coursename"><%= title.tr_s("_", " ").upcase %></h3>
+      <h3 class="title coursename" id="<%= title %>"><%= title.tr_s("_", " ").upcase %></h3>
         <% info.each do |key, value| %>
           <div class="content">
             <span class="tag is-danger is-medium"><%= key.tr_s("_", " ").upcase %></span>
@@ -22,7 +22,7 @@ title: "Courses and Schedule"
 <% data.afterschool_class.courses.each do |course| %>
   <% course.each do |title, info| %>
     <section class="section">
-      <h3 class="title coursename"><%= title.tr_s("_", " ").upcase %></h3>
+      <h3 class="title coursename" id="afterschool"><%= title.tr_s("_", " ").upcase %></h3>
         <% info.each do |key, value| %>
           <div class="content">
             <span class="tag is-warning is-medium"><%= key.tr_s("_", " ").upcase %></span>
@@ -39,7 +39,7 @@ title: "Courses and Schedule"
 <% data.saturday_class.courses.each do |course| %>
   <% course.each do |title, info| %>
     <section class="section">
-      <h3 class="title coursename"><%= title.tr_s("_", " ").upcase %></h3>
+      <h3 class="title coursename" id="<%= title %>"><%= title.tr_s("_", " ").upcase %></h3>
         <% info.each do |key, value| %>
           <div class="content">
             <span class="tag is-success is-medium"><%= key.tr_s("_", " ").upcase %></span>
