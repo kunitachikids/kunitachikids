@@ -10,13 +10,15 @@ policies:
   - Cultivate globally minded students who collaborate and compete with others respectfully. Educate students about their own culture, while developing curiosity and respect for other cultures.
   - Foster students' responsibility toward their behavior through encouraging them to apologize when they make mistakes, as well as learning a lesson from their misbehavior to improve in the future.
 ---
-<div class="content">
-  <h1 class="title"><%= current_page.data.title %></h1>
-  <h2 class="subtitle is-6"><%= current_page.data.description %></h2>
-  <ol>
+<h1 class="title"><%= current_page.data.title %></h1>
+<h2 class="subtitle"><%= current_page.data.description %></h2>
+<section class="section is-paddingless">
+  <ol class="policies">
     <% current_page.data.policies.each do |policy| %>
-      <li><p><%= policy %></li>
+      <li class="policy">
+        <span class="order"></span>
+        <p class="policy-text"><%= policy %></p>
+      </li>
     <% end %>
   </ol>
-</div>
-
+</section>
