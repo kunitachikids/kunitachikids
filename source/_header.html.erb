@@ -8,7 +8,7 @@
           </h1>
           <div class="level-right">
             <div>
-              <p>Tel: <%= data.nav.contacts.tel %></p>
+              <p>Tel: <%= link_to data.nav.contacts.tel,  "tel:" + data.nav.contacts.tel %></p>
               <p>Email: <%= data.nav.contacts.email %></p>
               <p>Address: <%= data.nav.contacts.address %></p>
             </div>
